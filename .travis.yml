@@ -1,3 +1,9 @@
 language: java
-before_install:
-  - chomod +x gradlew
+install: true
+
+os: linux
+dist: trusty
+jdk: oraclejdk8
+
+script:
+  - ./gradlew build --scan -s
